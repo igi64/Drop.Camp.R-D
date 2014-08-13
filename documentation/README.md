@@ -8,12 +8,12 @@ This documentation repository holds [node-webrtc](https://github.com/js-platform
    Do not extract to a path containing spaces.
    
 4. Add depot_tools folder to your environmental variables PATH
-   set PATH=%PATH%;<path-to-depot_tools-directory>\depot_tools
+   `set PATH=%PATH%;<path-to-depot_tools-directory>\depot_tools`
 
-5. Run gclient from the cmd shell.
+5. Run `gclient` from the cmd shell.
 
 6. Set necessary environmental variables
-   You can create a shortcut to the environment variable dialog with the path: %windir%\System32\rundll32.exe sysdm.cpl,EditEnvironmentVariables
+   You can create a shortcut to the environment variable dialog with the path: `%windir%\System32\rundll32.exe sysdm.cpl,EditEnvironmentVariables`
 
 GYP_DEFINES -> component=shared_library build_with_chromium=0
 GYP_GENERATORS -> msvs
@@ -22,11 +22,11 @@ WDK_DIR -> c:\WinDDK\7600.16385.1 (or somewhere else if you chose a custom dir)
 
 7. Clone the repository using gclient config http://webrtc.googlecode.com/svn/trunk.
 
-8. Get the source code -> gclient sync --nohooks.
+8. Get the source code -> `gclient sync --nohooks`.
 
-9. Create project files with gyp (overwriting any existing ones!) -> gclient runhooks --force.
+9. Create project files with gyp (overwriting any existing ones!) -> `gclient runhooks --force`.
 
-10. in nss.gyp comment out "USE_HW_AES" and "INTEL_GCM" and rerun gclient runhooks --force
+10. in nss.gyp comment out "USE_HW_AES" and "INTEL_GCM" and rerun `gclient runhooks --force`
 
 11. in video_render_direct3d9.h comment out #include <d3dx9.h>, in video_render_direct3d9.cc comment out D3DXMATRIX...
 
