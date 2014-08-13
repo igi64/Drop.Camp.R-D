@@ -20,7 +20,7 @@ This documentation repository holds [node-webrtc](https://github.com/js-platform
 `GYP_MSVS_VERSION` -> `2013`
 `WDK_DIR` -> `c:\WinDDK\7600.16385.1` (or somewhere else if you chose a custom dir)
 
-7. Clone the repository using `gclient config` http://webrtc.googlecode.com/svn/trunk.
+7. Clone the repository using `gclient config http://webrtc.googlecode.com/svn/trunk`.
 
 8. Get the source code -> `gclient sync --nohooks`.
 
