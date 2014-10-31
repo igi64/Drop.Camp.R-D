@@ -16,7 +16,7 @@ This documentation repository holds [node-webrtc](https://github.com/js-platform
    You can create a shortcut to the environment variable dialog with the path: `%windir%\System32\rundll32.exe sysdm.cpl,EditEnvironmentVariables`
 
 `GYP_DEFINES` -> `component=shared_library build_with_chromium=0`
-`GYP_GENERATORS` -> `msvs-ninja` (`msvs` no longer works)
+`GYP_GENERATORS` -> `ninja,msvs-ninja` (`msvs` no longer works)
 `GYP_MSVS_VERSION` -> `2013` for Pro
 `GYP_MSVS_VERSION` -> `2013e` for Express
 `WDK_DIR` -> `c:\WinDDK\7600.16385.1` (or somewhere else if you chose a custom dir)
