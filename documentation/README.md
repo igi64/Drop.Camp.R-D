@@ -27,13 +27,9 @@ This documentation repository holds [node-webrtc](https://github.com/js-platform
 
 9. Create project files with gyp (overwriting any existing ones!) -> `gclient runhooks --force`.
 
-10. in `nss.gyp` comment out "USE_HW_AES" and "INTEL_GCM" and rerun `gclient runhooks --force`
+10. in `video_render_direct3d9.h` comment out `#include <d3dx9.h>`, in `video_render_direct3d9.cc` comment out `D3DXMATRIX...`
 
-11. in `video_render_direct3d9.h` comment out `#include <d3dx9.h>`, in `video_render_direct3d9.cc` comment out `D3DXMATRIX...`
-
-12. do not build for x64 platform!
-
-13. Before `wrtc.node` deployment Install MS Visual C++ 2013 Redistributable and copy `crssl.dll, crnss.dll, protobuf_lite.dll, crnspr.dll, icui18n.dll, icuuc.dll` into binding directory
+11. Before `wrtc.node` deployment Install MS Visual C++ 2013 Redistributable and copy `crssl.dll, crnss.dll, protobuf_lite.dll, crnspr.dll, icui18n.dll, icuuc.dll` into binding directory
 
 
 For overall information on the Drop.Camp project, please refer to the [Drop.Camp project Web site](https://github.com/igi64/Drop.Camp)
