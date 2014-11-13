@@ -1,0 +1,1 @@
+Usage: init -> offer -> print -> reply -> (generate answer on other side and paste it in here) -> chat
